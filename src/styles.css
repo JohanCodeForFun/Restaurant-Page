@@ -1,54 +1,107 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
+#home {
+  background-image: url("./images/burger-zulu-small.jpg");
+  background-position: center;
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+#home > h1,
+#home > p {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#home > h1 {
+  padding: 2rem 1rem 0 0;
+}
+
+#home > p {
+  padding: 0.5rem 0 1rem 1rem;
+}
+
+.menu-container {
+  padding: 0 2rem;
+}
+
+.menu-option {
+  padding-bottom: .3rem;
+}
+
+.menu-title {
+  display: flex;
+  align-items: center;
+}
+
+.dish-name {
+  margin-right: 1rem;
+}
+
+.separator {
+  flex-grow: 1;
+  border-bottom: 2px solid #333;
+  margin: 0 1rem;
+}
+
+.dish-price {
+  margin-left: 1rem;
+}
+
+/* header {
     background-color: #333;
     color: white;
     padding: 1rem;
     text-align: center;
-}
+} */
 
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+  display: inline;
+  margin: 0 1rem;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-main {
-    padding: 2rem;
-}
+/* main {
+  padding: 2rem;
+} */
 
 section {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-h2 {
-    color: #333;
+/* h2 {
+  color: #333;
+} */
+
+#contact {
+  padding-bottom: 4rem;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }

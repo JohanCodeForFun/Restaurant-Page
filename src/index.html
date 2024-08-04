@@ -7,26 +7,68 @@
 </head>
 <body>
   <header>
-    <nav>
-      <button>Home</button>
-      <button>Menu</button>
-      <button>About</button>
-      <button>Contact</button>
-    </nav>
+
   </header>
-  <div id="content">
     <main>
       <section id="home">
           <h1>Welcome to Our Restaurant</h1>
           <p>Experience the best dining experience with us.</p>
       </section>
       <section id="menu">
-          <h2>Our Menu</h2>
-          <ul>
-              <li>Dish 1 - $10</li>
-              <li>Dish 2 - $15</li>
-              <li>Dish 3 - $20</li>
-          </ul>
+        <nav id="nav-menu">
+          <button class="options" value="grill">Grill</button>
+          <button class="options" value="snacks">Snacks</button>
+          <button class="options" value="beverages">Beverage</button>
+        </nav>
+        <div id="content">
+          <div class="menu-container">
+            <h2>Grill</h2>
+            <ul>
+                <li class="menu-option">
+                  <h3 class="menu-title">
+                    <span class="dish-name">Dish 1</span>
+                    <span class="separator"></span>
+                    <span class="dish-price">$8</span>
+                  </h3>
+                  <p>Grilled vegetables with pommes frites</p>
+                </li>
+                <li class="menu-option">
+                  <h3 class="menu-title">
+                    <span class="dish-name">Dish 1</span>
+                    <span class="separator"></span>
+                    <span class="dish-price">$8</span>
+                  </h3>
+                  <p>Grilled vegetables with pommes frites</p>
+                </li>
+                <li class="menu-option">
+                  <h3 class="menu-title">
+                    <span class="dish-name">Dish 1</span>
+                    <span class="separator"></span>
+                    <span class="dish-price">$8</span>
+                  </h3>
+                  <p>Grilled vegetables with pommes frites</p>
+                </li>
+              </ul>
+            </div>
+        </div>
+        </section>
+      </div>
+
+        <!-- <div>
+          <img src="" alt="falafel">
+        Photo by <a href="https://unsplash.com/@eejermaine?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jermaine Ee</a> on <a href="https://unsplash.com/photos/brown-chips-on-white-ceramic-bowl-HVjuen9ik-U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+        <img src="" alt="burger">
+        Photo by <a href="https://unsplash.com/@zulufernando?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Zulu Fernando</a> on <a href="https://unsplash.com/photos/burger-on-brown-wooden-table-VZuXIoGhniQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+
+        <img src="" alt="kebab">
+        Photo by <a href="https://unsplash.com/@colynarymedia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Colynary Media</a> on <a href="https://unsplash.com/photos/a-close-up-of-a-tray-of-food-with-a-can-of-soda-xFlcICCGDys?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  
+        <img src="" alt="food truck">
+        Photo by <a href="https://unsplash.com/@nucky?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Dmitry Nucky Thompson</a> on <a href="https://unsplash.com/photos/woman-and-child-standing-in-front-of-yellow-bus-in-car-park-nZv5fBUeIZY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </div> -->
+        
       </section>
       <section id="contact">
           <h2>Contact Us</h2>
@@ -37,6 +79,10 @@
   <footer>
       <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
   </footer>
-  </div>
+  <!-- <script>
+        function handleMenuClick(value) {
+      console.log('Button clicked with value:', value);
+    }
+  </script> -->
 </body>
 </html>
