@@ -1,0 +1,85 @@
+{
+  "menu": {
+    "grill": [
+      {
+        "name": "BBQ Ribs",
+        "price": "12.0",
+        "description": "Slow-cooked ribs with BBQ sauce"
+      },
+      {
+        "name": "Grilled Chicken",
+        "price": "10.0",
+        "description": "Marinated chicken breast grilled to perfection"
+      },
+      {
+        "name": "Steak",
+        "price": "20.0",
+        "description": "Juicy steak with garlic butter"
+      },
+      {
+        "name": "Grilled Salmon",
+        "price": "18.0",
+        "description": "Salmon fillet with lemon and herbs"
+      },
+      {
+        "name": "Vegetable Skewers",
+        "price": "8.0",
+        "description": "Assorted vegetables grilled with olive oil"
+      }
+    ],
+    "snacks": [
+      {
+        "name": "French Fries",
+        "price": "5.0",
+        "description": "Crispy golden fries"
+      },
+      {
+        "name": "Onion Rings",
+        "price": "6.0",
+        "description": "Battered and fried onion rings"
+      },
+      {
+        "name": "Mozzarella Sticks",
+        "price": "7.0",
+        "description": "Fried mozzarella cheese sticks"
+      },
+      {
+        "name": "Chicken Wings",
+        "price": "9.0",
+        "description": "Spicy chicken wings with dipping sauce"
+      },
+      {
+        "name": "Nachos",
+        "price": "8.0",
+        "description": "Tortilla chips with cheese and jalapenos"
+      }
+    ],
+    "beverages": [
+      {
+        "name": "Coca Cola",
+        "price": "3.0",
+        "description": "Classic Coca Cola"
+      },
+      {
+        "name": "Orange Juice",
+        "price": "4.0",
+        "description": "Freshly squeezed orange juice"
+      },
+      {
+        "name": "Lemonade",
+        "price": "3.5",
+        "description": "Homemade lemonade"
+      },
+      {
+        "name": "Iced Tea",
+        "price": "3.5",
+        "description": "Chilled tea with lemon"
+      },
+      {
+        "name": "Coffee",
+        "price": "2.5",
+        "description": "Freshly brewed coffee"
+      }
+    ]
+  }
+}
