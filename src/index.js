@@ -34,7 +34,7 @@ function renderMenu(option = "grill") {
 
     const dishPricenode = document.createElement("span");
     dishPricenode.setAttribute("class", "dish-price")
-    dishPrice = document.createTextNode(options.price)
+    dishPrice = document.createTextNode("$" + options.price)
     dishPricenode.appendChild(dishPrice)
     headerContainer.appendChild(dishPricenode)
 
