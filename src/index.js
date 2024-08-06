@@ -17,17 +17,34 @@ const menuContent = document.querySelector("#content");
 
   for (let options of menu["grill"]) {
     node = document.createElement("li");
+    node.setAttribute("class", "menu-option")
     headerContainer = document.createElement("h3");
+    headerContainer.setAttribute("class", "menu-title")
 
+
+    const dishnamenode = document.createElement("span")
+    dishnamenode.setAttribute("class", "dish-name");
     dishname = document.createTextNode(options.name)
-    separator = document.createTextNode("------")
-    dishPrice = document.createTextNode(options.price)
-    node.appendChild(dishname)
-    node.appendChild(separator)
-    node.appendChild(dishPrice)
+    dishnamenode.appendChild(dishname);
+    headerContainer.appendChild(dishnamenode);
 
+    separator = document.createElement("span")
+    separator.setAttribute("class", "separator")
+    headerContainer.appendChild(separator);
+
+    const dishPricenode = document.createElement("span");
+    dishPricenode.setAttribute("class", "dish-price")
+    dishPrice = document.createTextNode(options.price)
+    dishPricenode.appendChild(dishPrice)
+    headerContainer.appendChild(dishPricenode)
+
+    node.appendChild(headerContainer)
+
+    const description = document.createElement("p");
+    description.setAttribute("class", "dish-description")
     dishDescription = document.createTextNode(options.description);
-    node.appendChild(dishDescription)
+    description.appendChild(dishDescription)
+    node.appendChild(description)
 
     menuList.appendChild(node);
   }
