@@ -2,11 +2,11 @@ import "./styles.css";
 
 import menu from "./data/menu.json";
 
-// let menuOption = "grill"
-
 const menuContent = document.querySelector("#content");
 
-(function renderMenu(option = "grill") {
+function renderMenu(option = "grill") {
+  menuContent.innerHTML = "";
+  
   const menuTitle = Object.keys(menu).find(element => element === option)
   const menuTitleElement = document.createElement("h2");
   menuTitleElement.innerText = `${menuTitle}`;
@@ -15,7 +15,7 @@ const menuContent = document.querySelector("#content");
   const menuList = document.createElement("ul");
   let node, headerContainer, dishname, separator, dishPrice, dishDescription;
 
-  for (let options of menu["grill"]) {
+  for (let options of menu[option]) {
     node = document.createElement("li");
     node.setAttribute("class", "menu-option")
     headerContainer = document.createElement("h3");
@@ -50,9 +50,13 @@ const menuContent = document.querySelector("#content");
   }
 
   menuContent.appendChild(menuList)
-})();
+};
 
-function changeMenu() {}
+renderMenu();
+
+function changeMenu(option) {
+  renderMenu(option)
+}
 
 const menuButtons = document.querySelectorAll(".options")
 
@@ -61,10 +65,5 @@ menuButtons.forEach(button => {
 })
 
 function handleMenuClick(menuOption) {
-  // menuOption = value
-  console.log("menu option:", menuOption);
-  console.log(menu[menuOption]);
-  // menu[value].forEach(option => {
-  //   // console.log(option)
-  // })
+  changeMenu(menuOption);
 }
