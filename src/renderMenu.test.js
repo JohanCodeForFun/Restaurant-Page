@@ -43,14 +43,14 @@ describe("render menu", () => {
 
     const firstDishElement = content.querySelector("li.menu-option");
 
-    expect(firstDishElement.querySelector(".dish-name").textContent).toBe(
+    expect(firstDishElement.querySelector(".dish-name").innerText).toBe(
       firstDish.name
     );
-    expect(firstDishElement.querySelector(".dish-price").textContent).toBe(
+    expect(firstDishElement.querySelector(".dish-price").innerText).toBe(
       "$" + firstDish.price
     );
-    expect(
-      firstDishElement.querySelector(".dish-description").textContent
-    ).toBe(firstDish.description);
+    expect(firstDishElement.querySelector(".dish-description").innerText).toBe(
+      firstDish.description
+    );
   });
 });
