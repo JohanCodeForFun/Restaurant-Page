@@ -1,6 +1,6 @@
 import "./styles.css";
 
-import renderMenu from "./renderMenu";
+import renderMenu from "./renderMenu.js";
 
 renderMenu();
 
