@@ -37,7 +37,7 @@ function createMenuItem(option) {
   return node;
 }
 
-function renderMenu(option = "grill") {
+function renderMenu(option = "Grill") {
   const menuContent = document.querySelector("#content");
   menuContent.innerHTML = "";
 
