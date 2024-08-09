@@ -37,7 +37,17 @@ body {
 }
 
 .menu-container {
-  padding: 0 2rem;
+  margin: 1rem 2rem;
+  padding: .3rem .5rem;
+  border-radius: .5rem;
+  border: 3px solid salmon;
+  background-color: #333;
+  color: whitesmoke;
+}
+
+.menu-container > ul {
+  list-style: none;
+  padding: 0;
 }
 
 .menu-option {
